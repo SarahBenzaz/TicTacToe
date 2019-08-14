@@ -1,0 +1,27 @@
+.board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border : 1px solid black;
+
+  height: 60vh;
+  width: 60vh;
+  margin: 20px;
+
+}
+
+.row {
+flex-grow: 1;
+display: flex;
+
+}
+
+.row div{
+  flex-grow: 1;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.row:nth-child(even) div:nth-child(even),
+.row:nth-child(odd) div:nth-child(odd)
